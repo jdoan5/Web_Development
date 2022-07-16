@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Events</title>
+</head>
+
+<script>
+  function checkField1() {
+    var field = document.getElementById("field1").value;
+    if (field.length < 5)
+      document.getElementById("message1").innerHTML = "Too short!";
+    else
+      document.getElementById("message1").innerHTML = "That's a long enough!";
+  }
+
+    function checkField2 () {
+    var field2 = document.getElementById("field2").value;
+    if (field2.length != 0)
+      document.getElementById("message2").innerHTML = "Too short!";
+    else
+      document.getElementById("message2").innerHTML = "That's a long enough!";
+  }
+</script>
+<body>
+<p>JavaScript onblur Event Tests</p>
+
+<input id="field1" type="text" onblur="checkField1();"/> <span id="message1"></span>
+<input id="field2" type="text" onblur="checkField2();"/> <span id="message2"></span>
+<input id="field3" type="text" /> <span id="message3"></span>
+</body>
+</html>
