@@ -1,0 +1,32 @@
+<!-- The purpose of this page is conversion time -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Conversion Time</title>
+</head>
+<body>
+<script>
+  function minutesConversion () {
+    var userInput1 = document.getElementById("input").value;
+    alert("The minutes = " + userInput1 * 60 + " seconds")
+  }
+  function secondsConversion () {
+    var userInput2 = document.getElementById("input2").value;
+    alert("The seconds = " + userInput2 / 60 + " minutes" )
+  }
+</script>
+<P style="color: red;border: orange; border-width: 5px; border-style: dashed"><br><font size="5">Minutes Conversion</P>
+<button onclick="alert('Invalid');">Enter minutes</button>
+<input id="input" type="number"/>
+<button onclick="minutesConversion()">Click here</button>
+<p id="test"></p>
+
+<P style="color: red;border: orange; border-width: 5px; border-style: dashed"><br><font size="5">Seconds Conversion</P>
+<button onclick="alert('Invalid');">Enter seconds</button>
+<input id="input2" type="number2"/>
+<button onclick="secondsConversion()">Click here</button>
+<p id="test2"></p>
+
+</body>
+</html>
