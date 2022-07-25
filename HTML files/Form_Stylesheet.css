@@ -1,0 +1,36 @@
+/* Form stylesheet for HTML Form */
+body {
+  background-color: lightblue;
+}
+
+#foodselection {
+  height: 20px;
+  width: 230px;
+  position: center;
+  border-bottom: 1px solid #f51c40;
+  background: lightcoral;
+  text-align: center;
+}
+
+#textbox1, #textbox2 {
+  background-color: lightgoldenrodyellow;
+}
+
+.chicken {
+  text-align: center;
+  color: red;
+}
+
+/*.bridge {
+  border: 5px outset red;
+  background-color: lightblue;
+  text-align: center;
+}
+
+#foodchoice {
+  border: 5px outset red;
+  background-color: green;
+  text-align: center;
+}
+*/
+
