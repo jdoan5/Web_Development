@@ -1,0 +1,25 @@
+body {
+  background-color: lightpink;
+}
+
+table1, tr, td {
+  border:1px solid red;
+}
+
+#beef {
+  text-align: center;
+  color: green;
+}
+
+#fname {
+  background: lightblue;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  padding: 10px;
+  background: lightcoral;
+}
+
+

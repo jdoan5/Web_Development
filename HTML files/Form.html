@@ -1,0 +1,73 @@
+<!--The purpose of this how to create a form
+Author: John Doan-->
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="Form_Stylesheet.css">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Types</title>
+</head>
+<h1>HTML Forms and Types</h1>
+
+<script>
+  function helloUser () {
+    document.getElementById("Hi").innerHTML = "Hello you"
+  }
+
+  function userValidator () {
+    let x = document.forms["form"][firstname].value = "hi";
+    if (x == "") {
+      alert("Enter your name");
+      return false;
+    }
+  }
+</script>
+
+<body id="foodchoice">
+<form> This is an example of radio button<br>
+  <p id="foodselection">Please pick your favorite food</p>
+  <input type="radio" name="food" value="Pizza"> Pizza<br>
+  <input type="radio" name="food" value="Hotdog"> Hotdog<br>
+  <input type="radio" name="food" value="Salad"> Salad<br>
+  <input type="radio" name="food"> Bobba Tea<br>
+  <input type="checkbox" name="food" value="Beefsteak"> Beefsteak<br>
+  <input type="checkbox" name="food" value="Sandwich"> Sandwich<br>
+
+  <p class="chicken">Chicken <br>
+    Mild <input type="range" name="food">Not Mild<br>
+    Spring roll<br>
+    Mild <input type="range" name="food">Not Mild<br></p>
+
+
+</form>
+
+<hr width="70%"; size="10px"; color="burlywood";>
+
+<form> This is an example of fill-in button<br>
+  <label>Enter number</label><br>
+  <input type="number" id="textbox1" name="number" value="0"><br>
+
+  <label>Enter text</label><br>
+  <input type="text" id="textbox2" name="text" value="text" >
+</form><br>
+
+<hr width="70%"; size="10px"; align="center" color="burlywood";>
+
+<form> This is an example of button T or F</form>
+  <button name="True" type="submit" value="True">True</button>
+  or <button name="False" type="submit" value="False">False</button>
+
+<hr width="70%" size="10px"; align="center" color="burlywood">
+
+<p><strong> This is an example of onClick Event</p></strong>
+<button onclick="helloUser()">Click here</button>
+<p id="Hi"></p>
+
+<hr width="70%"; size="10px"; align="center" color="burlywood";>
+<p><strong> This is an example of form validator</strong></p>
+<form name="form" onsubmit="return userValidator()">
+  Name: <input type="text" name="firstname">
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hourly Salary</title>
+</head>
+<script>
+  function calculateIncome() {
+    var userInput1 = document.getElementById("grossPay").value;
+
+    var userInput2 = document.getElementById("totalHour").value;
+
+    document.getElementById("output").innerHTML = userInput1 / userInput2;
+  }
+</script>
+
+<body>
+<p>Hourly Salary</p>
+<button onclick="alert('Enter Gross Pay')">Gross Pay</button>
+<input id="grossPay" type="number1"/>
+
+<p></p>
+<button onclick="alert('Enter Total Hours Worked')">Total Hours Worked</button>
+<input id="totalHour" type="number2"/>
+
+<p></p>
+<form>
+  <input type="button" onclick="calculateIncome()" value="Submit"><br>
+  <span id="output"></span>
+  <p>hello</p>
+</form>
+<p id="test"></p>
+</body>
+</html>
+
+
+
+
