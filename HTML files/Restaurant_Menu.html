@@ -6,10 +6,12 @@
 </head>
 <link rel="stylesheet" href="Form_CSS.css">
 <body>
+  <form id="FormMenu">
+  <div class="content">
 <h1>J-exPress Food Order</h1>
-<p>Order Form</p>
+<p><b>Order Form</b></p>
 
-<p>I. Please choose your order menu below</p>
+<p>Choose your order menu below</p>
 <table id="table1">
 <tr>
   <td><input type="checkbox" name="hotdog" value="Hotdog"> Hotdog<br>
@@ -20,29 +22,54 @@
 
   <td><input type="checkbox" name="french fries" value="French Fries"> French Fries<br>
     <img src="french%20fries.jpeg" atl="French Fries" width="100" height="100"></td>
+
+  <td><input type="checkbox" name="burger" value="Burger">Burger<br>
+    <img src="burger.jpg" alt="Burger" width="100" height="100"></td>
 </tr>
 </table>
 
+<p>Pick your degree of doneness </p>
+<p class="beef">Beef <br>
+  Medium <input type="range" name="food">Well Done<br>
+
+<p> Any special requirements, please enter below</p>
+  <form name="userIn" onsubmit="return validateForm()" method="post">
+    <input type="text" id="input" name="input"><br>
+    <br>
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name"><br>
+      <br><label for="name">Address</label>
+      <input type="text" id="address" name="address"><br>
+      <br><label for="name">Pickup Date</label>
+      <input type="date" id="myDate" value="2014-11-2"><br>
+
+    <br> <input type="submit" value="Submit">
+  </form>
+    <input type="submit" value="Reset">
+
+
+
+
+
+</script>
 <script>
   function validateForm() {
-    let x = document.forms[userInput()]["fname"].value;
+    let x = document.forms["userIn"]["input"].value;
     if (x == "") {
-      alert("Please fill out");
+      alert("Please fill out the information");
       return false;
     }
   }
 </script>
-
-<p>II. Please pick your degree of doneness </p>
-<p class="beef">Beef <br>
-  Medium <input type="range" name="food">Well Done<br>
-
-<p>III. Any special requirements, please enter below</p>
-<form name="userInput" onsubmit="return validateForm()" method="post">
- <input type="text" name="fname">
- <input type="submit" id="userInput" value="Clear">
-</form>
-
+<script>
+  function clearForm() {
+    var element = document.getElementById("FormMenu");
+    element.reset()
+  }
+</script>
+  </div>
+  </form>
 </body>
 </html>
 
