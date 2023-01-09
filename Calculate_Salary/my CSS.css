@@ -1,0 +1,16 @@
+body {
+  background-color: lightcyan;
+}
+
+.center {
+  margin: auto;
+  width: 60%;
+
+  padding: 10px;
+}
+
+#header {
+  margin: auto;
+  text-align: center;
+  color: rebeccapurple;
+}
