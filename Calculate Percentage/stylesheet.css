@@ -1,0 +1,23 @@
+#title1 {
+  width: 300px;
+  color: rebeccapurple;
+}
+
+#input1{
+  font-size: larger;
+}
+#background {
+  background-color: lightblue;
+}
+
+.center {
+  margin: auto;
+  width: 400px;
+  padding: 100px;
+  text-align: justify-all;
+}
+
+#box1 {
+  font-size: 30px;
+  border: 20px;
+}
