@@ -1,7 +1,5 @@
 **Calculator**
 
-Simple overview of use/purpose.
-
 **Description**
 
 A simple calculator with basic functions.
