@@ -8,10 +8,16 @@
 
 </head>
 <body>
-<h1>The calculator </h1>
 <div class="formstyle">
   <form name="form1">
-    <input id="calc" type="text" name="answer"> <br> <br>
+    <fieldset>
+      <legend id="frame"><b>Calculator</legend>
+    <input id="calc" type="text" name="answer"> <br><br>
+    <input type="button" value="√" onclick="doMath()">
+    <input type="button" value="%" onclick="doMath2()">
+    <input type="button" value="&plusmn;" onclick="sign()">
+    <input type="button" value="C" onclick="form1.answer.value= ''"><br><br>
+
     <input type="button" value="1" onclick="form1.answer.value += '1'">
     <input type="button" value="2" onclick="form1.answer.value += '2'">
     <input type="button" value="3" onclick="form1.answer.value += '3'">
@@ -22,7 +28,6 @@
     <input type="button" value="5" onclick="form1.answer.value += '5'">
     <input type="button" value="6" onclick="form1.answer.value += '6'">
     <input type="button" value="-" onclick="form1.answer.value += '-'">
-    <input type="button" value="%" onclick="doMath2()">
     <br> <br>
 
     <input type="button" value="7" onclick="form1.answer.value += '7'">
@@ -37,8 +42,7 @@
 
     <input type="button" value="=" onclick="form1.answer.value = eval(form1.answer.value)">
     <br> <br>
-
-    <input type="button" value="Clear All" onclick="form1.answer.value= ' ' " id="clear">
+    </fieldset>
   </form>
 </div>
 </body>
