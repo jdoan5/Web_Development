@@ -5,6 +5,7 @@ Simple overview of use/purpose.
 A simple calculator with basic functions.
 
 **Authors**
+
 Name: John Doan
 Email: johndoan@acm.org
 
