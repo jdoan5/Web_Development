@@ -1,13 +1,13 @@
-Calculator
+**Calculator**
 Simple overview of use/purpose.
 
-Description
+**Description**
 A simple calculator with basic functions.
 
 **Authors**
-John Doan
-johndoan@acm.org
+Name: John Doan
+Email: johndoan@acm.org
 
-Version History
+**Version History**
 1.0
 Initial Release
