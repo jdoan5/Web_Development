@@ -1,33 +1,34 @@
-.container {
-    width: 800px;
+html {
+    background-color: #343a40;;
+}
+
+.container_box {
+    width: 1000px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    position: relative;
+    border-color: 10px;
+    margin-top: 15px;
+    border: 12px solid #b2222b;
 }
 
 .white {
-    height: 100px;
-    width: 100px;
-    background-color: #f0d9b5;
+    height: 120px;
+    width: 120px;
+    background-color: lightgoldenrodyellow;
     font-size: 100px;
     text-align: center;
-    color: white;
+    
 }
 
 .black {
-    height: 100px;
-    width: 100px;
-    background-color: #b58863;
+    height: 120px;
+    width: 120px;
+    background-color: darkkhaki;
     font-size: 100px;
     text-align: center;
-    color: black;
+
 }
 
-image {
-    display: block;
-    margin:auto;
-    width: 50px;
-    height: 50px;
-    bottom: 50px;
-    position: relative;
-}
