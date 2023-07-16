@@ -1,0 +1,14 @@
+html {
+    background-color: antiquewhite;
+}
+
+.flag {
+        height: 100px;
+        background: repeating-linear-gradient(
+          to bottom,
+          red 0px,
+          white 20px,
+          red 20px,
+          white 40px
+        );
+      }
